@@ -142,13 +142,5 @@ namespace CustomInventory
                 }
             }
         }
-
-        public void OnRagdollSpawn(SpawnedRagdollEventArgs ev)
-        {
-            Timing.CallDelayed(60, () =>
-            {
-                ev.Ragdoll.Destroy();
-            });
-        }
     }
 }
