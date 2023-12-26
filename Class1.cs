@@ -36,12 +36,10 @@ namespace CustomInventory
             server = new EventHandlers();
 
             Player.Spawned += player.OnPlayerSpawn;
-            Player.SpawnedRagdoll += player.OnRagdollSpawn;
         }
         public void UnRegisterEvents()
         {
             Player.Spawned -= player.OnPlayerSpawn;
-            Player.SpawnedRagdoll -= player.OnRagdollSpawn;
 
             player = null;
             server = null;
