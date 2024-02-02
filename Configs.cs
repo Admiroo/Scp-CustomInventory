@@ -21,7 +21,7 @@ namespace CustomInventory
         };
 
         [Description("Chances each item has. 50 means 50%")]
-        public Dictionary<RoleTypeId, int[]> CustomInventaryChances { get; set; } = new Dictionary<RoleTypeId, int[]>()
+        public Dictionary<RoleTypeId, int[]> CustomInventoryChances { get; set; } = new Dictionary<RoleTypeId, int[]>()
         { 
             { RoleTypeId.ClassD, new int[] { 75 }},
         };
